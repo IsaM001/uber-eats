@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+.navbar {
+  background-color: black;
+  color: #fff;
+  padding-top: 12px;
+}
+.navbar a {
+  text-decoration: none;
+}
+
+h4 {
+  font-size: x-large;
+  position: relative;
+  left: 3%;
+  top: -10px;
+  color: white;
+}
+
+.Green-Eats {
+  color: green;
+  font-size: x-large;
+}
+
+form {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto; /* Center the form horizontally */
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  text-align: center;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0; 
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: black;
+  margin: 0 10px; 
+}
+
+p {
+  font-size: small;
+}
+
+.QR {
+  text-align: center;
+}
+
+.imgqr {
+  width: 15%;
+}
+
+.small-txt {
+  font-size: small;
+}
+
+.Continue {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.Continue:hover {
+  background-color: yellow;
+  color: black;
+}

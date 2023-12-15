@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <script>
+        // Retrieve user details from the query parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get("name");
+        const mobile = urlParams.get("mobile");
+
+        // information about the code being sent
+        document.write(
+          `<h1>Welcome, ${name}!</h1>
+        <p>A numeric code has been sent to ${mobile}. Enter it below, then you can satisfy your hunger<br>
+           🍔🍟🍕</p>`
+        );
+
+        document.write(`
+                  <form id="codeForm">
+                    <input type="text" name="code" id="codeInput" placeholder="" />
+                    <button type="submit">Submit</button>
+                  </form>
+                `);
+        // Add event listener to the form
+        document
+          .getElementById("codeForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            // Get the code input value
+            const codeValue = document.getElementById("codeInput").value;
+
+            // Check if the code is strictly equal to a numeric value
+            if (!isNaN(codeValue) && typeof +codeValue === "number") {
+              // replace '123' with your desired numeric code
+              // Redirect to the desired link
+              window.location.href = "https://www.ubereats.com/gb";
+            } else {
+              // Handle invalid code case
+              alert("Invalid code. Please try again with a numeric code.");
+            }
+          });
+      </script>
+    </div>
+  </body>
+</html>

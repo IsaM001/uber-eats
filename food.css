@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+* {
+  font-family: "DM Serif Display", serif;
+}
+
+.navbar {
+  padding-top: 20px;
+  width: 100%;
+  background-color: black;
+  margin: 0;
+  padding-right: 50px;
+}
+.navbar a {
+  text-decoration: none;
+}
+
+h4 {
+  font-size: x-large;
+  position: relative;
+  left: 3%;
+  top: -10px;
+  color: white;
+}
+
+.Green-Eats {
+  color: green;
+  font-size: x-large;
+}
+
+/* Style for the header section */
+.header {
+  text-align: center;
+  background-color: rgb(243, 240, 240);
+  color: black;
+  width: 200px;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 800px;
+  border: 3px solid black;
+}
+
+/* Style for the flexbox container */
+.flexbox-container {
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid black;
+  margin-top: 20px;
+}
+
+/* Style for individual flex items */
+.flex-item {
+  width: calc(33.33% - 20px);
+  min-width: 200px;
+  margin: 10px;
+  height: auto;
+  border: 3px solid black;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style for input field */
+input {
+  padding: 10px;
+}
+
+/* Style for buttons within flex items */
+.cuisbtn {
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+  width: 80%;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+  width: 80%;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style for text within the flex items */
+.flex-item p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Style for images within the flex items */
+.flex-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+}
+
+.rest-hidden {
+  display: none;
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+  .flex-item {
+    width: 100%;
+  }
+
+  .flex-item img {
+    height: auto;
+  }
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .flex-item {
+    flex: 0 0 calc(33.33% - 20px);
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .flex-item {
+    flex: 0 0 calc(33.33% - 20px);
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .flex-item {
+    flex: 0 0 calc(33.33% - 20px);
+  }
+
+  /* Increase text size for larger screens */
+  .flex-item p {
+    font-size: 1.5rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .flex-item {
+    flex: 0 0 calc(33.33% - 20px);
+  }
+}
